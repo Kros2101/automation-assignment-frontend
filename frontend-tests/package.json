@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:open":"cypress open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:open": "cypress open",
+    "test:vrt": "percy exec cypress run --spec 'cypress/integration/visual-regression.spec.js'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^4.5.0"
+    "@percy/cli": "*",
+    "@percy/cypress": "^3.1.0",
+    "cypress": "^7.1.0"
   }
 }
