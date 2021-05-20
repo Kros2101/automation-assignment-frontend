@@ -16,7 +16,7 @@
  * @type {Cypress.PluginConfig}
  */
 
-let percyHealthCheck = require('@percy/cypress/task')
+//let percyHealthCheck = require('@percy/cypress/task')
 
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits

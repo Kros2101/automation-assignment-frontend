@@ -14,7 +14,7 @@ describe('Test suite', function(){
 
 
     // Test case
-    it.only('Test case 1: Perform login and logout', function(){
+    it('Test case 1: Perform login and logout', function(){
         indexFuncs.performValidLogin(cy,targets.username,targets.password,'Tester Hotel Overview')
         dashBoardFuncs.performLogout(cy, 'Login')
         cy.percySnapshot('Test case 1: Perform login and logout')
